@@ -1,10 +1,11 @@
-# Power BI Digital Twin Extractor — Downloads
+# Power BI Digital Twin Extractor - Downloads
 
-This repo holds the built `.exe` and documentation for the team. Source development happens in a separate private repo — ping the maintainer for access if you need that.
+This repo holds the built .exe and documentation for the team. Source development happens in a separate private repo - ping the maintainer for access if you need that.
 
-**⬇️ [Download PBI_Digital_Twin_Extractor.exe](https://raw.githubusercontent.com/walizzle/pbi-digital-twin-releases/main/PBI_Digital_Twin_Extractor.exe)** (right-click → Save Link As, or click then use your browser's download; some browsers preview it inline instead of downloading — if so, right-click the link.)
+**Download PBI_Digital_Twin_Extractor.exe:** https://raw.githubusercontent.com/walizzle/pbi-digital-twin-releases/main/PBI_Digital_Twin_Extractor.exe
+(right-click -> Save Link As, or click then use your browser's download; some browsers preview it inline instead of downloading - if so, right-click the link.)
 
-This repo updates automatically whenever the source changes, so it's always current — no need to ask for a fresh copy.
+This repo updates automatically whenever the source changes, so it's always current - no need to ask for a fresh copy.
 
 ---
 
@@ -20,7 +21,7 @@ You then hand that file to an AI assistant (Claude, ChatGPT, Copilot, etc.) as c
 
 | Item | Where to get it |
 |---|---|
-| `PBI_Digital_Twin_Extractor.exe` | The download link at the top of this page |
+| `PBI_Digital_Twin_Extractor.exe` | The `dist` folder next to this README, or wherever it was shared with you |
 | Your `.pbix` file | Required |
 | Your source Excel workbook (`.xlsx`) | Optional — only needed if you want the Power Query steps that live in Excel included |
 | A business context file (`.txt`) | Optional but **strongly recommended** — see [Business_Context_Guide.md](Business_Context_Guide.md) |
