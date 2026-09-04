@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here. Versioning follows [Semantic Versioning](https://semver.org/) (MAJOR.MINOR.PATCH). Each version from 1.3.1 onward has a matching git tag.
 
+## [1.8.0] - 2026-09-04
+### Added
+- `analyze_unused_measures()` — flags measures with no detected use in any visual's field wells and no reference from another measure's DAX (checked via bracket-reference search, so a measure used only as a building block for another measure is correctly excluded). New "Unused Measures (Heuristic - Not in Any Visual or Other Measure)" dossier section and an Executive Summary count. Explicitly framed as a heuristic lead, not a guarantee of dead code: it can't see filter-pane conditions, conditional formatting rules, or drillthrough filter targets, and only works for the modern PBIR report format (the legacy `Report/Layout` fallback never extracts per-visual fields at all, so every measure would falsely flag for a `.pbix` still on that format).
+
 ## [1.7.0] - 2026-09-01
 ### Added
 - Cloud extraction is now wired into the GUI and the shipped `.exe`: `orch2_gui.py` has a "Cloud Model (Power BI Service)" tab alongside the existing "Local File (.pbix)" tab, both sharing the log pane and Open Dossier/Open Output Folder controls. Signing in shows the device code prominently in the window (with Copy Code / Open Sign-in Page buttons) instead of requiring the user to find it in a scrolling log, and auto-opens the sign-in page.
